@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Heather Floyd [www.HeatherFloyd.com]</Copyright>
+    <RepositoryType>GIT</RepositoryType>
+    <Authors>Heather Floyd</Authors>
+    <Company></Company>
+    <Product>Dragonfly</Product>
+    <Description>A collection of Umbraco Grid helpers.</Description>
+    <PackageLicenseUrl>https://github.com/hfloyd/Dragonfly.UmbracoGrid/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/hfloyd/Dragonfly.UmbracoGrid</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hfloyd/Dragonfly.UmbracoGrid</RepositoryUrl>
+    <PackageId>Dragonfly.UmbracoGrid.Core</PackageId>
+    <AssemblyName>Dragonfly.UmbracoGrid</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Skybrud.Umbraco.GridData" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+
+  <Import Project="..\Custom.targets" />
+</Project>
